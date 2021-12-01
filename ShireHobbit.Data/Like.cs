@@ -17,5 +17,7 @@ namespace ShireHobbit.Data
         public Guid OwnerId { get; set; }
 
         public virtual Post Post { get; set; }
+
+        //does this work??
     }
 }
