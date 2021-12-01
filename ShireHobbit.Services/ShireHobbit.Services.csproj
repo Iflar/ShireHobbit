@@ -82,5 +82,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShireHobbit.Data\ShireHobbit.Data.csproj">
+      <Project>{E67E3713-5428-4213-B5B2-DC212DA1B368}</Project>
+      <Name>ShireHobbit.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShireHobbit.Models\ShireHobbit.Models.csproj">
+      <Project>{ba764b8e-5f92-4f4f-a5a2-75fa6d77c3bb}</Project>
+      <Name>ShireHobbit.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
