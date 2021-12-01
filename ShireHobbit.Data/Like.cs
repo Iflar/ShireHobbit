@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Data
 {
-    class Like
+     public class Like
     {
         [Key]
         public int LikeId { get; set; }
 
-        [ForeignKey(nameof(PostId))]
+        [ForeignKey(nameof(Post))]
         public Guid OwnerId { get; set; }
 
-        public virtual PostId PostIds { get; set; }
+        public virtual Post Post { get; set; }
     }
 }
