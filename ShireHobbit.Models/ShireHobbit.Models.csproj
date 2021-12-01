@@ -75,7 +75,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="LikeCreate.cs" />
+=======
+    <Compile Include="Class1.cs" />
+    <Compile Include="PostCreate.cs" />
+>>>>>>> 98983c7bb8a7f100d77d0795ffb6a463f51e7b50
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

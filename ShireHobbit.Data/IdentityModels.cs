@@ -33,6 +33,10 @@ namespace ShireHobbit.WebAPI.Models
             return new ApplicationDbContext();
         }
 
+<<<<<<< HEAD
         public DbSet<Like> Likes { get; set; }
+=======
+        public DbSet<Post> Posts { get; set; }
+>>>>>>> 98983c7bb8a7f100d77d0795ffb6a463f51e7b50
     }
 }

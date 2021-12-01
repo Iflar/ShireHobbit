@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LikeService.cs" />
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -88,7 +89,11 @@
       <Name>ShireHobbit.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\ShireHobbit.Models\ShireHobbit.Models.csproj">
+<<<<<<< HEAD
       <Project>{ba764b8e-5f92-4f4f-a5a2-75fa6d77c3bb}</Project>
+=======
+      <Project>{BA764B8E-5F92-4F4F-A5A2-75FA6D77C3BB}</Project>
+>>>>>>> 98983c7bb8a7f100d77d0795ffb6a463f51e7b50
       <Name>ShireHobbit.Models</Name>
     </ProjectReference>
   </ItemGroup>
