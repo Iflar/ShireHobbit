@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Services
 {
-    public class LikeService
+    class PostService
     {
+        //POST
 
     }
 }
