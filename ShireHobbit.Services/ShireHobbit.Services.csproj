@@ -75,7 +75,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="PostService.cs" />
+=======
     <Compile Include="LikeService.cs" />
+>>>>>>> 7301ab529a6b6591684ed685484cd4f16d37e28e
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
