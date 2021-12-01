@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShireHobbit.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,9 @@ namespace ShireHobbit.Services
     class PostService
     {
         //POST
-
+        public bool CreatePost(PostCreate model)
+        {
+            return false;
+        }
     }
 }
