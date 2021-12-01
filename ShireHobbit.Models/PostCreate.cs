@@ -17,5 +17,6 @@ namespace ShireHobbit.Models
         [Required]
         [MaxLength(90000, ErrorMessage = "This has gone on long enough")]
         public string  Content { get; set; }
+
     }
 }
