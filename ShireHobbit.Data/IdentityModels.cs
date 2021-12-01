@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+﻿using System
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -32,11 +32,5 @@ namespace ShireHobbit.WebAPI.Models
         {
             return new ApplicationDbContext();
         }
-
-<<<<<<< HEAD
-        public DbSet<Comment> Comments { get; set; }
-=======
-        public DbSet<Post> Posts { get; set; }
->>>>>>> 98983c7bb8a7f100d77d0795ffb6a463f51e7b50
     }
 }
