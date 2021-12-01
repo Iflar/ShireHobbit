@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Data
 {
-    class Like
+    public class Like
     {
         [Key]
         public int LikeId { get; set; }
