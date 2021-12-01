@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
 namespace ShireHobbit.Data
 {
-    class Reply
+    public class Reply : Comment
     {
+        [Key]
+        public int Id { get; set; }
+
+        [ForeignKey(nameof(Comment))]
+        public int CommentId { get; set; }
+
+        public virtual Comment Comments { get; set; }
     }
-}
