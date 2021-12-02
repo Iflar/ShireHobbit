@@ -26,6 +26,7 @@ namespace ShireHobbit.Services
             {
                 ctx.Posts.Add(entity);
                 return ctx.SaveChanges() == 1;
+                //this is a test
             }
         }
     }
