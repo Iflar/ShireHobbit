@@ -1,4 +1,5 @@
 ﻿using ShireHobbit.Data;
+using ShireHobbit.Models;
 using ShireHobbit.WebAPI.Models;
 using System;
 using System.Collections.Generic;
