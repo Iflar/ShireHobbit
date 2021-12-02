@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LikeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -305,6 +306,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShireHobbit.Models\ShireHobbit.Models.csproj">
+      <Project>{BA764B8E-5F92-4F4F-A5A2-75FA6D77C3BB}</Project>
+      <Name>ShireHobbit.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShireHobbit.Services\ShireHobbit.Services.csproj">
+      <Project>{CB9153A9-788D-4BB2-BC0B-404B2A76C571}</Project>
+      <Name>ShireHobbit.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

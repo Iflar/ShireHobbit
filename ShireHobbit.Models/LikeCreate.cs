@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Models
 {
-    class LikeCreate
+    public class LikeCreate
     {
+        public int LikeId { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }
