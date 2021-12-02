@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ShireHobbit.Data;
+using ShireHobbit.WebAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +31,7 @@ namespace ShireHobbit.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Comments.Add(entity);
+                ctx.Comment.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
@@ -58,6 +60,52 @@ namespace ShireHobbit.Services
         public CommentDetail GetCommentById(int id)
         {
             using(var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Comments
+                        .Single(e => e.Id == id && e.AuthorId == _userId);
+                return
+                    new CommentDetail
+                    {
+                        Id = entity.Id,
+                        Text = entity.Text,
+                        AuthorId = entity._userId,
+                        PostId = entity.PostId
+                    };
+            }
+        }
+
+        public bool UpdateComment(CommentEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Comments
+                        .Single(e => e.Id == model.Id && e.AuthorId == _userId);
+                entity.Text = model.Text;
+                entity.Id = model.Id;
+                entity.PostId = model.PostId;
+
+                return ctx.SaveChanges() == 1;
+
+            }
+        }
+
+        public bool DeleteComment(int commentId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Comments
+                        .Single(e => e.Id == commentId && e.AuthorId == _userId);
+
+                ctx.Comments.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Data
 {
-    // TEST
+ 
     public class Comment
     {
         [Key]
