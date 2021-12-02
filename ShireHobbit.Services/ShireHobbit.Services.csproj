@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -76,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="CreateServices.cs" />
     <Compile Include="CommentServices.cs" />
     <Compile Include="LikeService.cs" />
     <Compile Include="PostService.cs" />
@@ -86,6 +85,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShireHobbit.Data\ShireHobbit.Data.csproj">
+      <Project>{E67E3713-5428-4213-B5B2-DC212DA1B368}</Project>
+      <Name>ShireHobbit.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShireHobbit.Models\ShireHobbit.Models.csproj">
+      <Project>{BA764B8E-5F92-4F4F-A5A2-75FA6D77C3BB}</Project>
+      <Name>ShireHobbit.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
