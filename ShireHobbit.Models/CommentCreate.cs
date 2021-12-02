@@ -8,5 +8,6 @@ namespace ShireHobbit.Models
 {
     class CommentCreate
     {
+
     }
 }
