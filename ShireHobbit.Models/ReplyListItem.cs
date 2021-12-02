@@ -13,7 +13,7 @@ namespace ShireHobbit.Models
         public string Text { get; set; }
 
         [Display(Name="Create Message")]
-        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset TimeStamp { get; set; }
 
     }
 }

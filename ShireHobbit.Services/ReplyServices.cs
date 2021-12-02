@@ -30,8 +30,28 @@ namespace ShireHobbit.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Replies
+                ctx.Replies.Add(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public IEnumerable<ReplyListItem> GetReplies()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query = ctx
+                            .Replies
+                            .where(e => e.AuthorId == _userId)
+                            .Select(
+                                e => new ReplyListItem
+                                {
+                                    ReplyId = e.ReplyId,
+                                    Text = e.Text,
+                                    TimeStamp = e.TimeStamp
+                                });
+                return query.ToArray();
             }
         }
     }
 }
+
