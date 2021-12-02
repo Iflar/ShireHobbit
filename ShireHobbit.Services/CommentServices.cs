@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Services
 {
-    class CreateServices
+    class CommentServices
     {
     }
 }
