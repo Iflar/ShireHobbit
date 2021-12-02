@@ -75,23 +75,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CreateServices.cs" />
     <Compile Include="LikeService.cs" />
     <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplyServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ShireHobbit.Data\ShireHobbit.Data.csproj">
-      <Project>{E67E3713-5428-4213-B5B2-DC212DA1B368}</Project>
-      <Name>ShireHobbit.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ShireHobbit.Models\ShireHobbit.Models.csproj">
-      <Project>{BA764B8E-5F92-4F4F-A5A2-75FA6D77C3BB}</Project>
-      <Name>ShireHobbit.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
