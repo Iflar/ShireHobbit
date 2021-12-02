@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Data
 {
+    // This is a test, I really hope this works!
     public class Post
     {
         [Key]
