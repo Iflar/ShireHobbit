@@ -71,7 +71,7 @@ namespace ShireHobbit.Services
                     {
                         Id = entity.Id,
                         Text = entity.Text,
-                        AuthorId = entity._userId,
+                        AuthorId = _userId,
                         PostId = entity.PostId
                     };
             }
