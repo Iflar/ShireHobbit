@@ -18,6 +18,7 @@ namespace ShireHobbit.WebAPI.Models
             // Add custom user claims here
             return userIdentity;
             // coool
+
         }
     }
 
@@ -34,5 +35,8 @@ namespace ShireHobbit.WebAPI.Models
         }
 
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Reply> Replies { get; set; }
+        public DbSet<Like> Likes { get; set; }
     }
 }
