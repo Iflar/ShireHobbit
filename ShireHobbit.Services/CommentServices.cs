@@ -6,8 +6,26 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Services
 {
-    class CommentServices
+    public class CommentServices
     {
+        public readonly Guid _userId;
 
+        public CommentServices(Guid userId)
+        {
+            _userId = userId;
+        }
+
+        public bool CreateComment(CommentCreate model)
+        {
+            var entity =
+                new Comment()
+                {
+                    Id = model.Id,
+                    Text = model.Text,
+                    AuthorId = _userId,
+                    PostId = model.PostId
+
+                };
+        }
     }
 }
