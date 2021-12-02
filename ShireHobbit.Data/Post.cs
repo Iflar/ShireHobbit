@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Data
 {
-    class Post
+    public class Post
     {
         [Key]
         public int Id { get; set; }
@@ -16,8 +16,5 @@ namespace ShireHobbit.Data
         public virtual List<Comment> Comments { get; set; }
         public virtual List<Like> Likes { get; set; }
         public Guid AuthorID { get; set; }
-
-        // test
-        // test 2
     }
 }

@@ -9,12 +9,12 @@ namespace ShireHobbit.Data
 {
     public class Reply : Comment
     {
-        [Key]
-        public int Id { get; set; }
+        [Required]
+        public DateTimeOffset CreeatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
 
         [ForeignKey(nameof(Comment))]
-        public int CommentId { get; set; }
-
+        public int ReplyId { get; set; }
         public virtual Comment Comments { get; set; }
     }
 }

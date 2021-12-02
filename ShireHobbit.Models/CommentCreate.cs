@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShireHobbit.Models
 {
-    public class Class1
+    class CommentCreate
     {
     }
 }
