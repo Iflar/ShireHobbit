@@ -75,7 +75,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="CommentServices.cs" />
     <Compile Include="LikeService.cs" />
     <Compile Include="PostService.cs" />
