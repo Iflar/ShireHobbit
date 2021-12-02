@@ -29,5 +29,25 @@ namespace ShireHobbit.Services
                 //this is a test
             }
         }
+
+        //GET
+        public IEnumerable<PostListItem> GetPosts()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query = ctx.Posts.Where(e => e.AuthorID == _userId).Select
+                    (e =>
+                    new PostListItem
+                    {
+                        PostId = e.Id,
+                        Title = e.Title,
+                        Content = e.Content,
+                        Comments = e.Comments,
+                        Likes = e.Likes
+                    }
+                    );
+                return query.ToArray();
+            }
+        }
     }
 }
