@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 
 namespace ShireHobbit.Data
-{//test
+{ 
     public class Reply : Comment
     {
         [Key]
@@ -16,5 +16,8 @@ namespace ShireHobbit.Data
         public int CommentId { get; set; }
 
         public virtual Comment Comments { get; set; }
+
+        [Required]
+        public DateTime TimeStamp { get; set; }
     }
 }
