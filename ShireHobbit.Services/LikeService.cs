@@ -40,12 +40,13 @@ namespace ShireHobbit.Services
                 var entity =
                     ctx
                         .Likes
-                        .Single(e => e.LikeId == likeId && e.PostId == postId);
+                        .Single(e => e.LikeId == postId && e.OwnerId == _userId);
                 return
                     new LikeDetail
                     {
                         LikeId = entity.LikeId,
-                        PostId = entity.PostId
+                        OwnerId = entity.OwnerId,
+                        Post = entity.Post
                     };
             }
         }

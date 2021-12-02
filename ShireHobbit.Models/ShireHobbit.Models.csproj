@@ -77,6 +77,7 @@
     <Compile Include="CommentEdit.cs" />
     <Compile Include="CommentListItem.cs" />
     <Compile Include="LikeCreate.cs" />
+    <Compile Include="LikeDetail.cs" />
     <Compile Include="PostCreate.cs" />
     <Compile Include="PostListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +87,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShireHobbit.Data\ShireHobbit.Data.csproj">
+      <Project>{E67E3713-5428-4213-B5B2-DC212DA1B368}</Project>
+      <Name>ShireHobbit.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
